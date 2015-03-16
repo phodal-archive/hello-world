@@ -8,7 +8,7 @@ def generate_json(dir_name, files_name):
     data = []
     index = 0
     for file in files_name:
-        language_info = {'language': file, 'id': index}
+        language_info = {'language': file, 'id': index, 'level': dir_name}
         data.append(language_info)
         index += 1
 

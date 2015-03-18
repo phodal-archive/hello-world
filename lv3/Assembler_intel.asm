@@ -1,5 +1,3 @@
-; hello_world.asm intel 
-
 .model small
 
 .stack 100h
@@ -12,7 +10,7 @@ main proc
         mov ax,@data
         mov ds, ax
 
-; hello-world is there 
+; hello-world is there
         mov dx,offset msg
         mov ah,09
         int 21h
